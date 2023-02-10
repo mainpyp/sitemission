@@ -1983,7 +1983,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #93ffe7;
+				background-color: var(--button-active-color);
 			}
 
 			input[type="submit"].primary:active,
@@ -1991,7 +1991,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #44f2cb;
+				background-color: var(--button-active-color);
 			}
 
 		@media screen and (max-width: 736px) {
@@ -3187,7 +3187,7 @@ input, select, textarea {
 			position: relative;
 			width: 50%;
 		}
-
+		
 			ul.feature-icons li:before {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z' fill='rgba(144, 144, 144, 0.1)' /%3E%3C/svg%3E");
 				background-position: center;

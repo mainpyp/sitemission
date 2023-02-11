@@ -14,8 +14,14 @@
 	
 	--font-color: white;
 	--font-color-header: white;
+	--button-color: white;
 	--button-active-color: darkred;
 	--link-color: grey;
+
+	--line-color: black;
+	--dot-color: white;
+	--line-width: 0.5rem;
+	--dot-diameter: 0.8rem;
 }
 
 html, body, div, span, applet, object,
@@ -84,6 +90,17 @@ input, select, textarea {
 }
 
 /* Basic */
+
+	.language-switch{
+		position:fixed;
+		font-size: xx-large;
+		top:0;
+		right:0;
+   	}
+
+	a {
+		text-decoration: none;
+	}
 
 	@-ms-viewport {
 		width: device-width;
@@ -1973,7 +1990,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: var(--main-color);
+			background-color: var(--button-color);
 			box-shadow: none;
 			color: #000000 !important;
 		}
@@ -3304,12 +3321,12 @@ input, select, textarea {
 		}
 
 			#wrapper > section > header:before {
-				background: #43d9b8;
+				background: var(--line-color); /* THIS IS THE COLOR FOR THE LINEEEE!" */
 				content: '';
 				display: block;
 				margin-top: 1rem;
 				position: absolute;
-				width: 2px;
+				width: var(--line-width);
 			}
 
 			#wrapper > section > header h1, #wrapper > section > header h2 {
@@ -3317,23 +3334,23 @@ input, select, textarea {
 			}
 
 				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
-					background: #43d9b8;
+					background: var(--line-color);
 					content: '';
 					display: block;
-					height: 2px;
+					height: var(--line-width); /*2px*/
 					position: absolute;
 					top: 1rem;
 				}
 
 				#wrapper > section > header h1:after, #wrapper > section > header h2:after {
-					background: #43d9b8;
+					background: var(--dot-color);
 					border-radius: 0.5rem;
 					content: '';
 					display: block;
-					height: 0.5rem;
+					height: var(--dot-diameter);
 					position: absolute;
 					top: 0.75rem;
-					width: 0.5rem;
+					width: var(--dot-diameter);
 				}
 
 			#wrapper > section > header h1 {
@@ -3383,14 +3400,14 @@ input, select, textarea {
 			}
 
 			#wrapper > section:last-of-type > header:after {
-				background: #43d9b8;
+				background: var(--dot-color);
 				border-radius: 0.5rem;
 				bottom: -1.5rem;
 				content: '';
 				display: block;
-				height: 0.5rem;
+				height: var(--dot-diameter);
 				position: absolute;
-				width: 0.5rem;
+				width: var(--dot-diameter);
 				z-index: 1;
 			}
 

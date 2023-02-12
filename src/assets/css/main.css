@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
 
 /*
 	Paradigm Shift by HTML5 UP
@@ -8,20 +9,26 @@
 */
 
 :root {
-	--main-color:  navy; /* LEFT */
-	--background-color: navy; /* RIGHT */
-	--secondary-color: yellow;
+	--main-color:  #00FF0F; /* LEFT */
+	--background-color: white; /* RIGHT */
+	--secondary-color: white;
 	
-	--font-color: white;
-	--font-color-header: white;
-	--button-color: white;
-	--button-active-color: darkred;
-	--link-color: grey;
+	--font-color: black;
+	--font-color-header: black;
+	--button-color: black;
+	--button-active-color: #00FF0F;
+	--link-color: #00FF0F;
 
 	--line-color: black;
 	--dot-color: white;
 	--line-width: 0.5rem;
-	--dot-diameter: 0.8rem;
+	--dot-diameter: 1rem;
+
+	/* 
+	"Raleway", Helvetica, sans-serif; 
+	"Source Sans Pro", Helvetica, sans-serif;
+	*/
+	--font-style: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 html, body, div, span, applet, object,
@@ -192,7 +199,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: var(--font-color);
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 
 		font-size: 1rem;
 		font-weight: 300;
 		letter-spacing: 0.0375em;
@@ -243,7 +250,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: var(--font-style)
 		font-size: 5rem;
 		font-weight: 700;
 		letter-spacing: -0.05em;
@@ -2235,7 +2242,7 @@ input, select, textarea {
 			color: #000000;
 			cursor: pointer;
 			display: inline-block;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: var(--font-style);
 			font-size: 1rem;
 			font-weight: 300;
 			letter-spacing: 0.0375em;

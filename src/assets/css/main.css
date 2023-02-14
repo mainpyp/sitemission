@@ -25,10 +25,11 @@
 	--dot-diameter: 1rem;
 
 	/* 
-	"Raleway", Helvetica, sans-serif; 
+	
 	"Source Sans Pro", Helvetica, sans-serif;
 	*/
-	--font-style: "Source Sans Pro", Helvetica, sans-serif;
+	--font-style-header: "Raleway", Helvetica, sans-serif; ;
+	--font-style-body: "Dosis";
 }
 
 html, body, div, span, applet, object,
@@ -199,7 +200,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: var(--font-color);
-		font-family: 
+		font-family: var(--font-style-body);
 		font-size: 1rem;
 		font-weight: 300;
 		letter-spacing: 0.0375em;
@@ -236,7 +237,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: var(--font-color-header);
-		font-family: "Raleway", Helvetica, sans-serif;
+		font-family: var(--font-style-header);
 		font-weight: 600;
 		letter-spacing: 0.175em;
 		line-height: 1.75;

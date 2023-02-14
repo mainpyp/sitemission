@@ -250,7 +250,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-family: var(--font-style)
+		font-family: var(--font-style);
 		font-size: 5rem;
 		font-weight: 700;
 		letter-spacing: -0.05em;
